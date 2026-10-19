@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "tracebird": {
+      "type": "http",
+      "url": "https://tracebird.io/mcp",
+      "oauth_resource": "https://tracebird.io/mcp"
+    }
+  }
+}

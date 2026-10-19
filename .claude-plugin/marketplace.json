@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tracebird",
+  "description": "Tracebird for AI agents: the Tracebird MCP connector (OAuth sign-in) plus skills for ads performance, automation, split tests, tracking and reporting.",
+  "owner": { "name": "Tracebird", "email": "support@tracebird.io", "url": "https://tracebird.io" },
+  "plugins": [
+    {
+      "name": "tracebird",
+      "source": "./plugins/tracebird",
+      "description": "Connect your Tracebird workspace (sign in with OAuth) and get skills for performance reviews, cutting wasted spend, building automations, split tests, tracking setup and reports.",
+      "category": "productivity",
+      "keywords": ["ads", "facebook-ads", "google-ads", "attribution", "roas", "automation", "mcp"]
+    }
+  ]
+}

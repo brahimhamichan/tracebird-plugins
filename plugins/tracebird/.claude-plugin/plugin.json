@@ -1,0 +1,16 @@
+{
+  "name": "tracebird",
+  "displayName": "Tracebird",
+  "version": "1.0.0",
+  "description": "Connect your Tracebird workspace (sign in with OAuth) and get skills for performance reviews, cutting wasted spend, building automations, split tests, tracking setup and reports.",
+  "author": { "name": "Tracebird", "email": "support@tracebird.io", "url": "https://tracebird.io" },
+  "homepage": "https://tracebird.io/docs/api",
+  "repository": "https://github.com/brahimhamichan/tracebird-plugins",
+  "license": "MIT",
+  "keywords": ["ads", "facebook-ads", "google-ads", "attribution", "roas", "automation", "mcp"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://tracebird.io/docs/api",
+  "supportUrl": "mailto:support@tracebird.io",
+  "privacyPolicyUrl": "https://tracebird.io/privacy",
+  "termsOfServiceUrl": "https://tracebird.io/terms"
+}

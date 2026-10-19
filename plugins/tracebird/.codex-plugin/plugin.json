@@ -1,0 +1,47 @@
+{
+  "name": "tracebird",
+  "version": "1.0.0",
+  "description": "Connect your Tracebird workspace (sign in with OAuth) and get skills for performance reviews, cutting wasted spend, building automations, split tests, tracking setup and reports.",
+  "author": {
+    "name": "Tracebird",
+    "email": "support@tracebird.io",
+    "url": "https://tracebird.io"
+  },
+  "homepage": "https://tracebird.io/docs/api",
+  "repository": "https://github.com/brahimhamichan/tracebird-plugins",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "facebook-ads",
+    "google-ads",
+    "attribution",
+    "roas",
+    "automation",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Tracebird",
+    "shortDescription": "Ads, revenue & automation",
+    "longDescription": "Connect your Tracebird workspace with one sign-in and run it from your agent: review Facebook and Google Ads performance with attributed and front-end/back-end revenue, cut wasted spend, build automation rules, run landing-page split tests, set up tracking and conversions, and create reports. Every action Tracebird's app offers is available, with the same permissions.",
+    "developerName": "Tracebird",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://tracebird.io",
+    "privacyPolicyURL": "https://tracebird.io/privacy",
+    "termsOfServiceURL": "https://tracebird.io/terms",
+    "defaultPrompt": [
+      "Review my ad performance for the last 7 days",
+      "Find ads that are wasting spend",
+      "Build an automation rule to pause losing ads"
+    ],
+    "brandColor": "#1F4DFF",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/composer-icon.png"
+  }
+}
