@@ -40,7 +40,7 @@ These tools change how conversions are attributed and what is sent to Meta. Show
 ## 7. Revenue settings (front-end / back-end)
 1. `list_offers`: tag each offer front_end or back_end, or auto (price threshold decides) with `set_offer_stage`.
 2. `list_revenue_streams`: choose what each stream counts as with `set_revenue_stream_role` (split, threshold, front_end, back_end, none, auto).
-3. `update_revenue_settings`: back-end threshold and revenue source of truth (auto, stripe, crm, facebook).
+3. `update_revenue_settings`: back-end threshold, revenue attribution model (last_click, first_click, smart) and revenue source of truth (auto, stripe, crm, facebook).
 4. Each change alters FE/BE/blended revenue and ROAS on dashboards. Compare `get_revenue` before and after.
 
 ## 8. Verify
