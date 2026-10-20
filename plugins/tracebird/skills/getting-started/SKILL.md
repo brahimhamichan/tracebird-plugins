@@ -41,6 +41,7 @@ Summarize in a few lines, with the matching skill:
 - Prefer reversible steps: pause instead of delete; create automation rules OFF and preview first.
 - Dates are YYYY-MM-DD in the workspace reporting timezone. Money is in major units with a currency field.
 - List tools are paginated: pass next_cursor back as cursor. On HTTP 429 wait for Retry-After before retrying.
+- If a tool named in these skills is not in your tool list (Codex loads a compact list), find it with `search_tools` and run it with `call_read_tool` (read scope) or `call_tool` (write scope).
 
 ## 5. Finish
 Offer a concrete first task (for example a 7-day performance review) and note what data is missing or stale.

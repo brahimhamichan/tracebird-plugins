@@ -26,7 +26,7 @@ Signing in opens Tracebird in your browser: pick the workspace, choose whether t
 
 ## What you get
 
-- **MCP server** `https://tracebird.io/mcp`: every action the Tracebird app offers (222 tools), with the same permissions as your account.
+- **MCP server** `https://tracebird.io/mcp`: every action the Tracebird app offers (222 tools), with the same permissions as your account. Codex loads only part of a long tool list, so its plugin uses `https://tracebird.io/mcp?profile=compact`: everyday tools plus `search_tools`, `call_read_tool` and `call_tool`, which reach all 222.
 - **Skills**:
 
 | Skill | Use it to |
@@ -54,8 +54,9 @@ Any MCP client can connect to `https://tracebird.io/mcp` (Streamable HTTP, MCP 2
 plugins/tracebird/
   .claude-plugin/plugin.json        Claude Code / Grok Build manifest
   .codex-plugin/plugin.json         Codex manifest
-  plugin.json, mcp.json             Agent Plugins 1.0 (portable) manifest and MCP config
-  .mcp.json                         MCP server for Claude Code, Codex and Grok Build
+  plugin.json, mcp.json             Agent Plugins 1.0 (portable) manifest and MCP config (compact tool list, read by Codex)
+  .mcp.json                         MCP server for Claude Code and Grok Build (all tools)
+  .codex-mcp.json                   MCP server for the Codex manifest (compact tool list)
   skills/<name>/SKILL.md            Agent Skills, shared by every agent
 ```
 

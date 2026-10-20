@@ -3,7 +3,7 @@
   "mcpServers": {
     "tracebird": {
       "type": "streamable-http",
-      "url": "https://tracebird.io/mcp"
+      "url": "https://tracebird.io/mcp?profile=compact"
     }
   }
 }

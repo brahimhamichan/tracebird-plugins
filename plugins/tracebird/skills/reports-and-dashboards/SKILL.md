@@ -1,6 +1,6 @@
 ---
 name: reports-and-dashboards
-description: "Builds Tracebird reports (metrics, templates, email schedules, saved views), customizes the dashboard layout, creates public embeds, and syncs Tracebird data into another app through the REST API. Use when the user says \"create a report\", \"email me a weekly report\", \"change my dashboard\", \"embed the dashboard\", \"pull data into my app\", \"use the Tracebird API\"."
+description: "Builds Tracebird reports (metrics, templates, delivery schedules, saved views), customizes the dashboard layout, creates public embeds, and syncs Tracebird data into another app through the REST API. Use when the user says \"create a report\", \"schedule a weekly report\", \"change my dashboard\", \"embed the dashboard\", \"pull data into my app\", \"use the Tracebird API\"."
 ---
 # Reports, dashboards and data export
 
@@ -11,9 +11,9 @@ description: "Builds Tracebird reports (metrics, templates, email schedules, sav
 4. `create_report` with name, description, template and config (metrics, rows, comparison). Show the definition back to the user.
 5. Maintain: `get_report`, `update_report`, `duplicate_report`, `archive_report` (prefer archive to removal).
 
-## 2. Schedules (sends real email)
-1. `list_report_schedules`.
-2. Confirm recipients (up to 25), cadence (daily, weekly, monthly), timezone (IANA, default UTC) and format (for example pdf) with the user, then `create_report_schedule`.
+## 2. Schedules (saved delivery preferences)
+1. `list_report_schedules`. Schedules are saved preferences, like the Reports page's "Saved schedule preferences"; don't tell the user an email was sent.
+2. Confirm recipients (1-25), cadence (daily, weekly or monthly), timezone (IANA, default UTC) and format (pdf or csv) with the user, then `create_report_schedule`.
 3. Change or pause with `update_report_schedule` (enabled false pauses).
 
 ## 3. Saved views

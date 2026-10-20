@@ -32,10 +32,10 @@ Rules run on a schedule against synced ads and can change live ads. Always creat
 ## 6. Organize and edit
 - Folders: `create_automation_folder`, `rename_automation_folder`, `move_automation_rules` (folder_id "root" to remove from a folder), `delete_automation_folder` (confirm).
 - Edit: `get_automation_rule`, change the config, `preview_automation_rule` again, then `update_automation_rule`. A rule that is ON keeps running with the new config and saving can 409 on a conflict, so confirm first.
-- Copy: `duplicate_automation_rule`. Remove: prefer OFF over `delete_automation_rule`.
+- Copy: `duplicate_automation_rule`. Remove: prefer OFF over `delete_automation_rule`, which also deletes the rule's run history.
 
 ## 7. Monitor
-- `run_automation_rule` evaluates now (confirm first; live if approved).
+- `run_automation_rule` evaluates a rule that is ON right now (confirm first; live if approved).
 - `list_automation_runs` shows matched, changed, dry-run flag and per-asset details; `get_automation_history_policy` gives the retention.
 - `list_automation_priority` shows queued or uncertain actions; these block manual edits until settled (`reconcile_automation_priority`, admin, only after the user verified in the ad account).
 - Review the first runs with the user, then adjust thresholds.

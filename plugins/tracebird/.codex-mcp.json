@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tracebird": {
+      "type": "http",
+      "url": "https://tracebird.io/mcp?profile=compact"
+    }
+  }
+}
